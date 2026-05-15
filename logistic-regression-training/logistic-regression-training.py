@@ -51,7 +51,7 @@ def gradient_descent(X, y, w_in, b_in,alpha, num_iters):
         # Save cost J at each iteration
         if i<100000:      # prevent resource exhaustion 
             cost =  compute_cost(X, y, w_in, b_in)
-        
+            print(cost)
         
     return w_in, b_in
 
